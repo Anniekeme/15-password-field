@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #132b50;
+  font-weight: 600;
+}
+
+.login-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  color: #132b50;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.account-details {
+  text-align: left;
+}
+
+.account-type {
+  font-size: 14px;
+  margin: 0;
+}
+
+.account-name {
+  font-size: 16px;
+  margin: 0;
+}
+
+.textbox {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.textbox label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container input[type="password"] {
+  width: 100%;
+  padding: 10px 40px 10px 35px;
+  /* Adjusted padding for lock icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.lock-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("lock-icon.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.show-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: url("eye-icon.png") no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stay-signed-in {
+  display: flex;
+  align-items: center;
+}
+
+.stay-signed-in input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.stay-signed-in input[type="checkbox"]:checked {
+  background-color: #1a73e8;
+}
+
+.stay-signed-in input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #005cbf;
+}
+
+.reset-link {
+  display: block;
+  margin-top: 10px;
+  color: #1a73e8;
+  text-decoration: none;
+  text-align: left;
+}
+
+.reset-link:hover {
+  text-decoration: underline;
+}
